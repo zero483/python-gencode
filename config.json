@@ -1,0 +1,9 @@
+{
+    "TOKEN": "#TOKEN",
+    "Allowed_Role": "*",
+    "Datenbank_Host": "localhost",
+    "Datenbank_User": "database",
+    "Datenbank_Password": "PASSWORT",
+    "Datenbank_Database": "database",
+    "Datenbank_port": "3306"
+  }
