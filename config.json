@@ -1,6 +1,7 @@
 {
     "TOKEN": "#TOKEN",
     "Allowed_Role": "*",
+    "Log_Channel": "023434",
     "Datenbank_Host": "localhost",
     "Datenbank_User": "database",
     "Datenbank_Password": "PASSWORT",
