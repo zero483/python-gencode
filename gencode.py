@@ -21,6 +21,7 @@ DATABASE_PASSWORD = config["Datenbank_Password"]
 DATABASE_DATABASE = config["Datenbank_Database"]
 DATABASE_PORT = config["Datenbank_port"]
 ALLOWED_ROLE_NAME = config["Allowed_Role"]
+LOG_CHANNEL = config["Log_Channel"]
 
 db_config = {
     "host": DATABASE_HOST,
@@ -69,7 +70,7 @@ async def generiere_key(ctx, member:nextcord.Member, reward:str):
             description=f"Der Admin **{ctx.user.display_name}** hat an **{member.global_name}** einen Code geschickt!\nBelohnung: **{reward}**",
             color=0xbf00ff
         )
-        await bot.get_channel(1167177527224184832).send(embed=logembed)
+        await bot.get_channel(LOG_CHANNEL).send(embed=logembed)
 
     except Exception as e:
         await ctx.send(f'Fehler beim Hinzufügen des Schlüssels zur Datenbank: {str(e)}')
